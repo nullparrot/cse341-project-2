@@ -1,28 +1,32 @@
-const validator = require('../utilities/validate');
-
-// Content below as example use case
+const validator = require("../utilities/validate");
 
 const saveDevice = (req, res, next) => {
     const validationRule = {
-      manuf: 'required|string',
-      lastName: 'required|string',
-      email: 'required|email',
-      favoriteColor: 'required|string',
-      birthday: 'string'
+        manufacture: "required|string",
+        model: "required|string",
+        release: "required|integer",
+        processorCores: "required",
+        processorGHz: "required",
+        storage: "required|integer",
+        memory: "required|integer",
+        screen: "required",
+        cameras: "required",
+        os: "required|string",
+        osVersion: "required|numeric"
     };
     validator(req.body, validationRule, {}, (err, status) => {
-      if (!status) {
-        res.status(412).send({
-          success: false,
-          message: 'Validation failed',
-          data: err
-        });
-      } else {
-        next();
-      }
+        if (!status) {
+            res.status(412).send({
+                success: false,
+                message: "Validation failed",
+                data: err
+            });
+        } else {
+            next();
+        }
     });
-  };
-  
-  module.exports = {
-    saveContact
-  };
+};
+
+module.exports = {
+    saveDevice,
+};
