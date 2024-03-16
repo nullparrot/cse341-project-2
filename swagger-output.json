@@ -1,0 +1,387 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "CSE 341 - Project 2",
+    "description": "Practing CRUD and Auth",
+    "version": "1.0.0"
+  },
+  "host": "https://cse341-project-2-2g4y.onrender.com",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Hello World: See if server is awake.",
+        "responses": {
+          "default": {
+            "description": "Hello World"
+          }
+        }
+      }
+    },
+    "/tablets/": {
+      "get": {
+        "description": "Get all Tablets",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "Add new tablet",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "manufacture": {
+                  "example": "any"
+                },
+                "model": {
+                  "example": "any"
+                },
+                "release": {
+                  "example": "any"
+                },
+                "processorCores": {
+                  "example": "any"
+                },
+                "processorGHz": {
+                  "example": "any"
+                },
+                "storage": {
+                  "example": "any"
+                },
+                "memory": {
+                  "example": "any"
+                },
+                "screen": {
+                  "example": "any"
+                },
+                "cameras": {
+                  "example": "any"
+                },
+                "os": {
+                  "example": "any"
+                },
+                "osVersion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/tablets/{id}": {
+      "get": {
+        "description": "Get single tablet by ID",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "description": "Modify existing tablet by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "manufacture": {
+                  "example": "any"
+                },
+                "model": {
+                  "example": "any"
+                },
+                "release": {
+                  "example": "any"
+                },
+                "processorCores": {
+                  "example": "any"
+                },
+                "processorGHz": {
+                  "example": "any"
+                },
+                "storage": {
+                  "example": "any"
+                },
+                "memory": {
+                  "example": "any"
+                },
+                "screen": {
+                  "example": "any"
+                },
+                "cameras": {
+                  "example": "any"
+                },
+                "os": {
+                  "example": "any"
+                },
+                "osVersion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete tablet by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/phones/": {
+      "get": {
+        "description": "Get all Phones",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "Add new phone",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "manufacture": {
+                  "example": "any"
+                },
+                "model": {
+                  "example": "any"
+                },
+                "release": {
+                  "example": "any"
+                },
+                "processorCores": {
+                  "example": "any"
+                },
+                "processorGHz": {
+                  "example": "any"
+                },
+                "storage": {
+                  "example": "any"
+                },
+                "memory": {
+                  "example": "any"
+                },
+                "screen": {
+                  "example": "any"
+                },
+                "cameras": {
+                  "example": "any"
+                },
+                "os": {
+                  "example": "any"
+                },
+                "osVersion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/phones/{id}": {
+      "get": {
+        "description": "Get single phone by ID",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "description": "Edit existing phone by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "manufacture": {
+                  "example": "any"
+                },
+                "model": {
+                  "example": "any"
+                },
+                "release": {
+                  "example": "any"
+                },
+                "processorCores": {
+                  "example": "any"
+                },
+                "processorGHz": {
+                  "example": "any"
+                },
+                "storage": {
+                  "example": "any"
+                },
+                "memory": {
+                  "example": "any"
+                },
+                "screen": {
+                  "example": "any"
+                },
+                "cameras": {
+                  "example": "any"
+                },
+                "os": {
+                  "example": "any"
+                },
+                "osVersion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete phone by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ dotenv.config();
 const router = require("./routes/");
 const tabletsRouter = require("./routes/tablets");
 const phonesRouter = require("./routes/phones");
+const swaggerRouter = require("./routes/swagger")
 const port = process.env.PORT;
 const mongodb = require("./database/");
 const bodyParser = require("body-parser");
@@ -13,6 +14,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json())
     .use("/tablets", tabletsRouter)
     .use("/phones", phonesRouter)
+    .use("/api-docs", swaggerRouter)
     .get("/", router);
 
 //Get Everything Running
