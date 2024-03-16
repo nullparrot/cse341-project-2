@@ -1,16 +1,19 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
-const router = require('./routes/');
+const router = require("./routes/");
+const tabletsRouter = require("./routes/tablets");
+const phonesRouter = require("./routes/phones");
 const port = process.env.PORT;
-const mongodb = require('./database/');
-const bodyParser = require('body-parser');
+const mongodb = require("./database/");
+const bodyParser = require("body-parser");
 
-app.use(bodyParser.json());
-
-//Routes
-app.get('/', router);
+// Routes
+app.use(bodyParser.json())
+    .use("/tablets", tabletsRouter)
+    .use("/phones", phonesRouter)
+    .get("/", router);
 
 //Get Everything Running
 mongodb.initDb((err) => {

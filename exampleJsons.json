@@ -1,0 +1,58 @@
+{
+    "manufacture": "HP",
+    "model": "Touchpad",
+    "release": 2011,
+    "processorCores": 2,
+    "processorGHz": 1.2,
+    "storage": 32,
+    "memory": 1,
+    "screen": {
+      "size": 9.7,
+      "vresolution": 1024,
+      "hresolution": 768
+    },
+    "cameras": [
+      {
+        "megapixels": 1.3,
+        "type": "selfie",
+        "location": "front"
+      }
+    ],
+    "os": "WebOS",
+    "osVersion": 3.0
+  }
+
+  
+  {
+    "manufacture": "Google",
+    "model": "Pixel 6",
+    "release": 2011,
+    "processorCores": [2,2,4],
+    "processorGHz": [2.8, 2.25, 1.8],
+    "storage": 256,
+    "memory": 8,
+    "screen": {
+      "size": 6.4,
+      "vresolution": 2400,
+      "hresolution": 1080
+    },
+    "cameras": [
+      {
+        "megapixels": 50,
+        "type": "wide",
+        "location": "rear"
+      },
+      {
+        "megapixels": 12,
+        "type": "ultrawide",
+        "location": "rear"
+      },
+      {
+          "megapixels": 8,
+        "type": "selfie",
+        "location": "front"
+      }
+    ],
+    "os": "Android",
+    "osVersion": 14
+  }
