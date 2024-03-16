@@ -5,10 +5,10 @@
     "description": "Practing CRUD and Auth",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project-2-2g4y.onrender.com",
+  "host": "cse341-project-2-2g4y.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
@@ -43,37 +43,47 @@
               "type": "object",
               "properties": {
                 "manufacture": {
-                  "example": "any"
+                  "example": "HP"
                 },
                 "model": {
-                  "example": "any"
+                  "example": "Touchpad"
                 },
                 "release": {
-                  "example": "any"
+                  "example": 2011
                 },
                 "processorCores": {
-                  "example": "any"
+                  "example": 2
                 },
                 "processorGHz": {
-                  "example": "any"
+                  "example": 1.2
                 },
                 "storage": {
-                  "example": "any"
+                  "example": 32
                 },
                 "memory": {
-                  "example": "any"
+                  "example": 1
                 },
                 "screen": {
-                  "example": "any"
+                  "example": {
+                    "size": 9.7,
+                    "vresolution": 1024,
+                    "hresolution": 768
+                  }
                 },
                 "cameras": {
-                  "example": "any"
+                  "example": [
+                    {
+                      "megapixels": 1.3,
+                      "type": "selfie",
+                      "location": "front"
+                    }
+                  ]
                 },
                 "os": {
-                  "example": "any"
+                  "example": "WebOS"
                 },
                 "osVersion": {
-                  "example": "any"
+                  "example": 3.0
                 }
               }
             }
@@ -134,37 +144,47 @@
               "type": "object",
               "properties": {
                 "manufacture": {
-                  "example": "any"
+                  "example": "HP"
                 },
                 "model": {
-                  "example": "any"
+                  "example": "Touchpad"
                 },
                 "release": {
-                  "example": "any"
+                  "example": 2011
                 },
                 "processorCores": {
-                  "example": "any"
+                  "example": 2
                 },
                 "processorGHz": {
-                  "example": "any"
+                  "example": 1.2
                 },
                 "storage": {
-                  "example": "any"
+                  "example": 32
                 },
                 "memory": {
-                  "example": "any"
+                  "example": 1
                 },
                 "screen": {
-                  "example": "any"
+                  "example": {
+                    "size": 9.7,
+                    "vresolution": 1024,
+                    "hresolution": 768
+                  }
                 },
                 "cameras": {
-                  "example": "any"
+                  "example": [
+                    {
+                      "megapixels": 1.3,
+                      "type": "selfie",
+                      "location": "front"
+                    }
+                  ]
                 },
                 "os": {
-                  "example": "any"
+                  "example": "WebOS"
                 },
                 "osVersion": {
-                  "example": "any"
+                  "example": 3.0
                 }
               }
             }
@@ -224,37 +244,57 @@
               "type": "object",
               "properties": {
                 "manufacture": {
-                  "example": "any"
+                  "example": "Google"
                 },
                 "model": {
-                  "example": "any"
+                  "example": "Pixel 6"
                 },
                 "release": {
-                  "example": "any"
+                  "example": 2011
                 },
                 "processorCores": {
-                  "example": "any"
+                  "example": [2,2,4]
                 },
                 "processorGHz": {
-                  "example": "any"
+                  "example": [2.8, 2.25, 1.8]
                 },
                 "storage": {
-                  "example": "any"
+                  "example": 256
                 },
                 "memory": {
-                  "example": "any"
+                  "example": 8
                 },
                 "screen": {
-                  "example": "any"
+                  "example": {
+                    "size": 6.4,
+                    "vresolution": 2400,
+                    "hresolution": 1080
+                  }
                 },
                 "cameras": {
-                  "example": "any"
+                  "example": [
+                    {
+                      "megapixels": 50,
+                      "type": "wide",
+                      "location": "rear"
+                    },
+                    {
+                      "megapixels": 12,
+                      "type": "ultrawide",
+                      "location": "rear"
+                    },
+                    {
+                        "megapixels": 8,
+                      "type": "selfie",
+                      "location": "front"
+                    }
+                  ]
                 },
                 "os": {
-                  "example": "any"
+                  "example": "Android"
                 },
                 "osVersion": {
-                  "example": "any"
+                  "example": "14"
                 }
               }
             }
@@ -315,37 +355,57 @@
               "type": "object",
               "properties": {
                 "manufacture": {
-                  "example": "any"
+                  "example": "Google"
                 },
                 "model": {
-                  "example": "any"
+                  "example": "Pixel 6"
                 },
                 "release": {
-                  "example": "any"
+                  "example": 2011
                 },
                 "processorCores": {
-                  "example": "any"
+                  "example": [2,2,4]
                 },
                 "processorGHz": {
-                  "example": "any"
+                  "example": [2.8, 2.25, 1.8]
                 },
                 "storage": {
-                  "example": "any"
+                  "example": 256
                 },
                 "memory": {
-                  "example": "any"
+                  "example": 8
                 },
                 "screen": {
-                  "example": "any"
+                  "example": {
+                    "size": 6.4,
+                    "vresolution": 2400,
+                    "hresolution": 1080
+                  }
                 },
                 "cameras": {
-                  "example": "any"
+                  "example": [
+                    {
+                      "megapixels": 50,
+                      "type": "wide",
+                      "location": "rear"
+                    },
+                    {
+                      "megapixels": 12,
+                      "type": "ultrawide",
+                      "location": "rear"
+                    },
+                    {
+                        "megapixels": 8,
+                      "type": "selfie",
+                      "location": "front"
+                    }
+                  ]
                 },
                 "os": {
-                  "example": "any"
+                  "example": "Android"
                 },
                 "osVersion": {
-                  "example": "any"
+                  "example": 14
                 }
               }
             }

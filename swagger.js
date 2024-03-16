@@ -5,7 +5,7 @@ const doc = {
     title: 'CSE 341 - Project 2',
     description: 'Practing CRUD and Auth'
   },
-  host: 'https://cse341-project-2-2g4y.onrender.com'
+  host: 'cse341-project-2-2g4y.onrender.com'
 };
 
 const outputFile = './swagger-output.json';
